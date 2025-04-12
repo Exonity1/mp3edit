@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TagMaster</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>🎧 TagMaster</h1>
+    <div id="drop-zone">MP3 hierher ziehen oder klicken</div>
+    <input type="file" id="file-input" accept=".mp3" hidden />
+    
+    <form id="tag-form" hidden>
+      <input type="text" id="title" placeholder="Titel" />
+      <input type="text" id="artist" placeholder="Künstler" />
+      <input type="text" id="album" placeholder="Album" />
+      <input type="text" id="year" placeholder="Jahr" />
+      <input type="text" id="genre" placeholder="Genre" />
+      <button type="submit">🎵 Speichern & herunterladen</button>
+    </form>
+  </main>
+
+  <!-- External Libraries -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/browser-id3-writer@4.0.0/dist/browser-id3-writer.umd.min.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
